@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 from discord.ext import commands
 
 client = commands.Bot(command_prefix="?", intents=discord.Intents.all())
-channel_id = 1120332095575826553
+channel_id = 0
 
 # Time calculation
 def hoursAgo(server_data):
