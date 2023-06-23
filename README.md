@@ -20,7 +20,7 @@ When the bot is activated, and after each UTC day, the channel supplied by chann
 
 - Discord Token needs to be added. 
 
-- Create a notepad document with server ids called serverids.txt. 
+- Create a notepad document with server ids called serverids.txt. If you manually add server IDs to notepad, make sure to add a new line after the last entered ID.
 
 - Change channel_id to a specific channel.
 
