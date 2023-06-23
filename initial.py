@@ -85,7 +85,6 @@ async def on_ready():
                 newWipe = createEmbed(server_data)
                 await channel.send(embed=newWipe)
             await asyncio.sleep(2)
-        # for loop go through each me
         index = -1
         async for message in channel.history(limit=None):
             if message.embeds:
