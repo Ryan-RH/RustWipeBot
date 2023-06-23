@@ -30,7 +30,7 @@ When the bot is activated, and after each UTC day, the channel supplied by chann
 
 - Crashes when another user, other than the bot, posts in the specified channel
 
-- Possible crash if attempt to add or remove server while serverlist command posted
+- Possible crash if attempt to remove server while serverlist command posted
 
 # Future Additions
 
