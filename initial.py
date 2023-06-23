@@ -18,7 +18,7 @@ def hoursAgo(server_data):
     else:
         return (str(last_wiped) + " hours ago")
 
-# Embed Inteface for Server Wipe
+# Embed Interface for Server Wipe
 def createEmbed(server_data):
     population = str(server_data['data']['attributes']['players'])+ "/" + str(server_data['data']['attributes']['maxPlayers'])
     ip = server_data['data']['attributes']['ip'] + ":" + str(server_data['data']['attributes']['port'])
