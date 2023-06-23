@@ -10,7 +10,7 @@ Discord Bot that allows users to add and remove their favourite Rust servers to 
 
 ![serverlist](https://github.com/Ryan-RH/RustWipeBot/assets/108598537/dc3ff7ca-2c28-425f-ad0b-74dc20c2ce37)
 
-When a server wipes, an embed will be posted, which is regularly updated to show the current population and time since the last wipe.
+When a server wipes, an embed will be posted, which is regularly edited to show the current population and time since the last wipe.
 
 ![justwiped](https://github.com/Ryan-RH/RustWipeBot/assets/108598537/9c2b69a3-dc87-4536-ba24-7e84f5d0e499)
 
@@ -20,7 +20,7 @@ When the bot is activated, and after each UTC day, the channel supplied by chann
 
 - Discord Token needs to be added. 
 
-- Create a notepad document with server ids called serverids.txt. If you manually add server IDs to notepad, make sure to add a new line after the last entered ID.
+- Create a notepad document with server ids called serverids.txt. If you manually add server IDs to Notepad, make sure to add a new line after the last entered ID.
 
 - Change channel_id to a specific channel.
 
