@@ -1,6 +1,7 @@
 # Rust Wipe Bot
 
 Discord Bot that allows users to add and remove their favourite servers to be notified of the exact time they wipe. ID from BattleMetrics is used.
+
 ![battleurl](https://github.com/Ryan-RH/RustWipeBot/assets/108598537/eda2c3f0-c7b3-4449-bb38-876c67f7c3c2)
 
 ![add remove](https://github.com/Ryan-RH/RustWipeBot/assets/108598537/ab5ebb75-2503-4807-8ebf-4e612f1a79f5)
