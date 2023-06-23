@@ -14,7 +14,7 @@ When a server wipes, an embed will be posted, which is regularly updated to show
 
 ![justwiped](https://github.com/Ryan-RH/RustWipeBot/assets/108598537/9c2b69a3-dc87-4536-ba24-7e84f5d0e499)
 
-When the bot is activated and after each UTC day, the channel supplied by channel_id will be purged.
+When the bot is activated, and after each UTC day, the channel supplied by channel_id will be purged.
 
 # Important
 
