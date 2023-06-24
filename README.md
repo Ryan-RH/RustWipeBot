@@ -12,7 +12,7 @@ Discord Bot that allows users to add and remove their favourite Rust servers to 
 
 When a server wipes, an embed will be posted, which is regularly edited to show the current population and time since the last wipe.
 
-![justwiped](https://github.com/Ryan-RH/RustWipeBot/assets/108598537/9c2b69a3-dc87-4536-ba24-7e84f5d0e499)
+![image](https://github.com/Ryan-RH/RustWipeBot/assets/108598537/2271dd1b-65af-4963-9a8c-d9e3dd059b1e)
 
 When the bot is activated, and after each UTC day, the channel supplied by channel_id will be purged.
 
