@@ -35,6 +35,7 @@ def createEmbed(server_data):
 
 # Grab Server Data
 async def serverGrab(serverid):
+    await asyncio.sleep(1)
     async with aiohttp.ClientSession() as session:
         async with session.get("https://api.battlemetrics.com/servers/" + serverid) as response:
             return (await response.json())
@@ -42,7 +43,7 @@ async def serverGrab(serverid):
 async def purge(channel):
     async for message in channel.history(limit=None):
         await message.delete()
-        await asyncio.sleep(2)
+        await asyncio.sleep(1)
 
 # Obtain Added Server IDs
 with open('serverids.txt', 'r') as serveridfile:
@@ -84,7 +85,6 @@ async def on_ready():
                 today_wipe.append(content[0])
                 newWipe = createEmbed(server_data)
                 await channel.send(embed=newWipe)
-            await asyncio.sleep(2)
         index = -1
         async for message in channel.history(limit=None):
             if message.embeds:
