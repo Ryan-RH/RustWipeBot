@@ -22,7 +22,7 @@ When the bot is activated, and after each UTC day, the channel supplied by chann
 
 - Create a notepad document with server ids called serverids.txt. If you manually add server IDs to Notepad, make sure to add a new line after the last entered ID.
 
-- Change channel_id to a specific channel.
+- Change channel_id to a specific channel in which wipe embeds will be posted, commands should be executed in a separate channel
 
 - Packages required: discord.py, pytz
 
