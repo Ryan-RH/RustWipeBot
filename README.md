@@ -32,7 +32,7 @@ When the bot is activated, and after each UTC day, the channel supplied by chann
 
 - Possible crash if attempt to remove server while serverlist command posted
 
-- If ?add [id] is spammed program will be rate-limited and therefore crash
+- If ?add [id] is spammed, program will be rate-limited and therefore crash
 
 # Future Additions
 
