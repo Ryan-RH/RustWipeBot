@@ -35,12 +35,20 @@ def createEmbed(server_data):
 
 # Grab Server Data
 async def serverGrab(serverid):
-    await asyncio.sleep(1)
-    async with aiohttp.ClientSession() as session:
-        async with session.get("https://api.battlemetrics.com/servers/" + serverid) as response:
-            return (await response.json())
+    while True:
+        await asyncio.sleep(1)
+        async with aiohttp.ClientSession() as session:
+            try:
+                async with session.get("https://api.battlemetrics.com/servers/" + serverid) as response:
+                    if response.headers.get("Content-Type") == "application/json":
+                        return (await response.json())
+            except aiohttp.ServerDisconnectedError:
+                print("The server unexpectedly disconnected. Retrying...")
+            except aiohttp.ClientConnectionError:
+                print("Failed to establish a connection to the server. Retrying...")
 
 async def purge(channel):
+    print("Purging.")
     async for message in channel.history(limit=None):
         await message.delete()
         await asyncio.sleep(1)
@@ -90,6 +98,7 @@ async def on_ready():
             if message.embeds:
                 index+=1
                 updated = createEmbed(await serverGrab(today_wipe[len(today_wipe)-1-index]))
+                await asyncio.sleep(2)
                 await message.edit(embed=updated)
         cycle+=1
         
@@ -168,6 +177,10 @@ async def serverlist(ctx):
                 await ctx.send(embed=(await embedServerList(serverids, servernames)))
                 serverlistinfo = serverlistinfo[index:]
                 break
-                        
+        
+
+
+
+                
             
 client.run("x")
